@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react"
 import Loader from "../components/Loader" //custom loader
+import Navbar from "../components/Navbar";
 
 
 
@@ -23,6 +24,7 @@ const Home = () => {
         :
         (
             <div className="home">
+                <Navbar />
                 <h1>Welcome to Ride Booking</h1>
             </div>
         )}
