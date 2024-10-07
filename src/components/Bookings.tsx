@@ -28,15 +28,19 @@ const Bookings:React.FC = () => {
 
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register('location')} placeholder="Enter Your Location"/>
-        <input {...register('city')} placeholder="Enter Your City"/>
-        <select {...register('carType')}>
-            <option value="Economy">Economy</option>
-            <option value="Luxury">Luxury</option>
-        </select>
-        <button type="submit"></button>
-    </form>
+            <div className="p-10">
+                <h1 className="font-bold text-3xl m-2 text-gray-800">Booking</h1>
+                    <form onSubmit={handleSubmit(onSubmit)} className="flex col border border-green-500 w-[700px] h-[700px] rounded p-5 gap-5">
+                        <input {...register('location')} placeholder="Enter Your Location" className="border rounded-md h-10 outline-none"/>
+                        <input {...register('city')} placeholder="Enter Your City" className="border rounded-md h-10 outline-none"/>
+                        <select {...register('carType')} className="border rounded-md h-10 outline-none">
+                            <option value="Economy">Economy</option>
+                            <option value="Luxury">Luxury</option>
+                        </select>
+                        <button type="submit"></button>
+                    </form>
+            </div>
+    
   )
 }
 
