@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer components {
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .col {
+        display: flex;
+        flex-direction: column;
+    }
+  }
