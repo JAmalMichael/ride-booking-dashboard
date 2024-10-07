@@ -27,7 +27,7 @@ const Home = () => {
         (
             <div className="home">
                 <Navbar />
-                <div className="row justify-between">
+                <div className="row justify-center items-center gap-2">
                     <Bookings />
                     <Map />
                 </div>
